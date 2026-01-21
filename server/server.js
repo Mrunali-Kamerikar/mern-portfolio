@@ -3,6 +3,17 @@ import app from "./app.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
+
+/**
+ * Connect Database
+ */
 connectDB();
 
-app.listen(5000, () => console.log("Server running"));
+const PORT = process.env.PORT || 5000;
+
+/**
+ * Start Server
+ */
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
