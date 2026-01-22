@@ -2,6 +2,9 @@ import express from "express";
 import cors from "cors";
 import authRoutes from "./routes/auth.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
+import projectRoutes from "./routes/project.routes.js";
+
+app.use("/api/projects", projectRoutes);
 
 const app = express();
 
