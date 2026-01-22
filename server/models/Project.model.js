@@ -13,8 +13,7 @@ const projectSchema = new mongoose.Schema(
     },
     shortDescription: {
       type: String,
-      required: true,
-      maxlength: 200
+      required: true
     },
     description: {
       type: String,
