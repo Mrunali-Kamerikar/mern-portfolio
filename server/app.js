@@ -3,8 +3,10 @@ import cors from "cors";
 import authRoutes from "./routes/auth.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
 import projectRoutes from "./routes/project.routes.js";
+import skillRoutes from "./routes/skill.routes.js";
 
 app.use("/api/projects", projectRoutes);
+app.use("/api/skills", skillRoutes);
 
 const app = express();
 
