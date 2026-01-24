@@ -4,9 +4,11 @@ import authRoutes from "./routes/auth.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
 import projectRoutes from "./routes/project.routes.js";
 import skillRoutes from "./routes/skill.routes.js";
+import experienceRoutes from "./routes/experience.routes.js";
 
 app.use("/api/projects", projectRoutes);
 app.use("/api/skills", skillRoutes);
+app.use("/api/experience", experienceRoutes);
 
 const app = express();
 
